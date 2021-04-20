@@ -100,7 +100,7 @@ settings = {
     "javascrift": False,
     "leave": False,
     "expire" : True,
-    "nCall" : True,
+    "nCall" : False,
     "time": time.time(),
     "flood": 0,
     "temp_flood" : False,
@@ -1985,7 +1985,7 @@ def bot(op):
                      path = dhenzaSelfbot.downloadObjectMsg(msg_id)
                      settings["groupPicture"] = False
                      dhenzaSelfbot.updateGroupPicture(msg.to, path)
-                     dhenzaSelfbot.sendMessage(msg.to, "Succes change pict group")
+                     dhenzaSelfbot.sendMessage(msg.to, "changed group picture.")
 
                if msg.contentType == 1:
                    if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
@@ -1993,7 +1993,7 @@ def bot(op):
                             path = dhenzaSelfbot.downloadObjectMsg(msg_id)
                             del Setmain["SKfoto"][mid]
                             dhenzaSelfbot.updateProfilePicture(path)
-                            dhenzaSelfbot.sendMessage(msg.to,"Succes change pict")
+                            dhenzaSelfbot.sendMessage(msg.to,"changed pfp.")
 
                if msg.contentType == 0:
                     if Setmain["autoRead"] == True:
@@ -2128,8 +2128,8 @@ def bot(op):
                         elif text.lower() == "mymid":
                                dhenzaSelfbot.sendMessage(msg.to, msg._from)
                                
-                        elif text.lower() == "dz":
-                               dhenzaSelfbot.sendMessage(msg.to, "hallo jangan lupa di subscribe ya kk chanel kita\n https://www.youtube.com/channel/UCNLejYy84XyUX8qcDropXMw")
+                        elif text.lower() == "plug":
+                               dhenzaSelfbot.sendMessage(msg.to, "instgram.com/realxias")
 
                         elif ("Get id " in msg.text):
                           if wait["selfbot"] == True:
@@ -2316,7 +2316,7 @@ def bot(op):
                                     dhenzaSelfbot.leaveGroup(i)
                                     dhenzaSelfbot.sendMessage(msg.to,"Leave in groups " +str(ginfo.name))
 
-                        elif cmd == "flist":
+                        elif cmd == "friendsliston":
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                ma = ""
@@ -2327,7 +2327,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "" + str(a) + ". " +G.displayName+ "\n"
-                               dhenzaSelfbot.sendMessage(msg.to,"●FRIEND LIST\n\n"+ma+"\nTotal"+str(len(gid))+"Friends")
+                               dhenzaSelfbot.sendMessage(msg.to,"+ma+"\nTotal"+str(len(gid))+"Friends")
                                
                         
                         elif cmd == "glist":
@@ -2341,7 +2341,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "" + str(a) + ". " +G.name+ "\n"
-                               dhenzaSelfbot.sendMessage(msg.to,"●GROUP LIST\n\n"+ma+"\nTotal"+str(len(gid))+" Groups")
+                               dhenzaSelfbot.sendMessage(msg.to,"+ma+"\nTotal"+str(len(gid))+" Groups")
 
                         elif cmd == "curl":
                           if wait["selfbot"] == True:
@@ -2361,7 +2361,7 @@ def bot(op):
                                       x.preventedJoinByTicket = False
                                       dhenzaSelfbot.updateGroup(x)
                                    gurl = dhenzaSelfbot.reissueGroupTicket(msg.to)
-                                   dhenzaSelfbot.sendMessage(msg.to, "Nama : "+str(x.name)+ "\nUrl grup : http://line.me/R/ti/g/"+gurl)
+                                   dhenzaSelfbot.sendMessage(msg.to, "http://line.me/R/ti/g/"+gurl)
 
 #===========BOT UPDATE============#                                                     
                         elif cmd.startswith("tarik "):
@@ -3660,13 +3660,13 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["autoJoin"] = True
-                                dhenzaSelfbot.sendMessage(msg.to,"Autojoin diaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"autojoin is now on")
 
                         elif cmd == "autojoin off" or text.lower() == 'autojoin off':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["autoJoin"] = False
-                                dhenzaSelfbot.sendMessage(msg.to,"Autojoin dinonaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"autojoin is now off")
 
                         elif cmd == "autoadd on" or text.lower() == 'autoadd on':
                           if wait["selfbot"] == True:
