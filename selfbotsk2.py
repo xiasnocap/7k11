@@ -597,7 +597,6 @@ def command(text):
     return cmd
  
 def help():
-key = key.title()
      helpMessage = ""
      helpMessage += "" + ""
      helpMessage += "" + ""
