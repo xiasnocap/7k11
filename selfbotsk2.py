@@ -596,134 +596,82 @@ def command(text):
         cmd = "command"
     return cmd
  
-
 def help():
-    num = 1
-    key = Setmain["keyCommand"]
-    key = key.title()
-    helpMessage = ""
-    helpMessage += "" + ""
-    helpMessage += "" + ""
-    helpMessage += "" + "" + key + "help\n"
-    helpMessage += "" + "" + key + "test\n"
-    helpMessage += "" + "" + key + ""
-    helpMessage += "" + "" + key + ""
-    helpMessage += "" + "" + key + ""
-    helpMessage += "" + "" + key + ""
-    helpMessage += "" + "" + key + ""
-    helpMessage += "" + "" + key + ""
-    helpMessage += "" + "" + key + ""
-    helpMessage += "" + "" + key + ""
-    helpMessage += "" + " │ 0%i)" % num + key + ""
-    num = (num+1)
-    helpMessage += "" + " │ 0%i)" % num + key + " Mymid\n"
-    num = (num+1)
-    helpMessage += "" + " │ %i)" % num + key + " Get id @\n"
-    num = (num+1)
-    helpMessage += "" + " │ %i)" % num + key + " Profile @\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Mybot\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Reject\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Rchat\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Bcast: text\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Cek name\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Name: text\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Reset name\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Reboot\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Time\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Ginfo\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Infogroup: no\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Infomem: no\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Leave: no\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Flist\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " clone @\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Restore\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Glist\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Curl/Orl\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Tarik No\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Upgroup\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Upbot\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Upfoto\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Changedual\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Changedualurl: url\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key +  " Mention\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Rname\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Sider ON/OFF\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " .By /leave no\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " Gift: @\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Spam: @\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Like @\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Delfriend @\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + " ID line: idnya\n"
-    num = (num+1)  
-    helpMessage += "│ " + " │ %i)" % num + key + "Unsend On/Off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "timeline On/Off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Autoblock on/off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Listblok/off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Check message\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "idcontact @\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "contact mid\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "inviteme no\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Contact on/off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Respon on/off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Autojoin on/off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Autoadd on/off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Sticker on/off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "Jointicket on/off\n"
-    num = (num+1)
-    helpMessage += "│ " + " │ %i)" % num + key + "welcome on/off\n"
-    num = (num+1)
-    helpMessage += "│ " + " ├──────────────\n"
-    helpMessage += "│ " + " ╰───• sʙ ʙʏ ©ᴅʜᴇɴᴢᴀ™ •────\n"
-    helpMessage += "╰━─────────────━ \n"
-    helpMessage += "https://www.youtube.com/channel/UCNLejYy84XyUX8qcDropXMw\n"
-    helpMessage += "https://youtu.be/iwZuig9flas"
-    return helpMessage
+num = 1
+key = Setmain["keyCommand"]
+key = key.title()
+     helpMessage = ""
+     helpMessage += "" + ""
+     helpMessage += "" + ""
+     helpMessage += "" + "" + key + "'\n"
+     helpMessage += "" + "" + key + "'\n"
+     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + " Mymid\n"
+     helpMessage += "" + "" + key + " Get id @\n"
+     helpMessage += "" + "" + key + " Profile @\n"
+     helpMessage += "" + "" + key + " Mybot\n"
+     helpMessage += "" + "" + key + " Reject\n"
+     helpMessage += "" + "" + key + " Rchat\n"
+     helpMessage += "" + "" + key + " Bcast: text\n"
+     helpMessage += "" + "" + key + " Cek name\n"
+     helpMessage += "" + "" + key + " Name: text\n"
+     helpMessage += "" + "" + key + " Reset name\n"
+     helpMessage += "" + "" + key + " Reboot\n"
+     helpMessage += "" + "" + key +" Time\n"
+     helpMessage += "" + "" + key +" Ginfo\n"
+     helpMessage += "" + "" + key +" Infogroup: no\n"
+     helpMessage += "" + "" + key + " Infomem: no\n"
+     helpMessage += "" + "" + key +" Leave: no\n"
+     helpMessage += "" + "" + key +" Flist\n"
+     helpMessage += "" + "" + key +" clone @\n"
+     helpMessage += "" + "" + key +" Restore\n"
+     helpMessage += "" + "" + key + " Glist\n"
+     helpMessage += "" + "" + key +" Curl/Orl\n"
+     helpMessage += "" + "" + key + " Tarik No\n"
+     helpMessage += "" + "" + key + " Upgroup\n"
+     helpMessage += "" + "" + key +" Upbot\n"
+     helpMessage += "" + "" + key + " Upfoto\n"
+     helpMessage += "" + "" + key + " Changedual\n"
+     helpMessage += "" + "" + key +" Changedualurl: url\n"
+     helpMessage += "" + "" + key +" Mention\n"
+     helpMessage += "" + "" + key + " Rname\n"
+     helpMessage += "" + "" + key + " Sider ON/OFF\n"
+     helpMessage += "" + "" + key + " .By /leave no\n"
+     helpMessage += "" + "" + key + " Gift: @\n"
+     helpMessage += "" + "" + key + "Spam: @\n"
+     helpMessage += "" + "" + key + "Like @\n"
+     helpMessage += "" + "" + key + "Delfriend @\n"
+     helpMessage += "" + "" + key + " ID line: idnya\n"
+     helpMessage += "" + "" + key + "Unsend On/Off\n"
+     helpMessage += "" + "" + key + "timeline On/Off\n"
+     helpMessage += "" + "" + key + "Autoblock on/off\n"
+     helpMessage += "" + "" + key + "Listblok/off\n"
+     helpMessage += "" + "" + key + "Check message\n"
+     helpMessage += "" + "" + key + "idcontact @\n"
+     helpMessage += "" + "" + key + "contact mid\n"
+     helpMessage += "" + "" + key + "inviteme no\n"
+     helpMessage += "" + "" + key + "Contact on/off\n"
+     helpMessage += "" + "" + key + "Respon on/off\n"
+     helpMessage += "" + "" + key + "Autojoin on/off\n"
+     helpMessage += "" + "" + key + "Autoadd on/off\n"
+     helpMessage += "" + "" + key + "Sticker on/off\n"
+     helpMessage += "" + "" + key + "Jointicket on/off\n"
+     helpMessage += "" + "" + key + "welcome on/off\n"
+     helpMessage += "" + ""
+     helpMessage += "" + ""
+     helpMessage += ""
+     helpMessage += ""
+     helpMessage += ""
+     return helpMessage
+
 
 def helpbot():
     num = 1
@@ -1267,7 +1215,7 @@ def bot(op):
                         pass
                     else:
                         cctv['sidermem'][op.param1] += "\n " + Name
-                        teambotmaxZ={'previewUrl': "http://dl.profile.line-cdn.net/"+dhenzaSelfbot.getContact(op.param2).picturePath, 'i-installUrl': 'http://itunes.apple.com/app/linemusic/id966142320', 'type': 'mt', 'subText': 'creator : dhenza15', 'a-installUrl': 'market://details?id=jp.linecorp.linemusic.android', 'a-packageName': 'jp.linecorp.linemusic.android', 'countryCode': 'JP', 'a-linkUri': 'linemusic://open?target=track&item=mb00000000016197ea&subitem=mt000000000d69e2db&cc=JP&from=lc&v=1', 'i-linkUri': 'linemusic://open?target=track&item=mb00000000016197ea&subitem=mt000000000d69e2db&cc=JP&from=lc&v=1', 'text': dhenzaSelfbot.getContact(op.param2).displayName, 'id': 'mt000000000d69e2db', 'linkUri': 'https://music.me.me/launch?target=track&item=mb00000000016197ea&subitem=mt000000000d69e2db&cc=JP&from=lc&v=1','MSG_SENDER_ICON': "https://os.line.naver.jp/os/p/"+op.param2,'MSG_SENDER_NAME':  dhenzaSelfbot.getContact(op.param2).displayName,}
+                        teambotmaxZ={'previewUrl': "http://dl.profile.line-cdn.net/"+dhenzaSelfbot.getContact(op.param2).picturePath, 'i-installUrl': 'http://itunes.apple.com/app/linemusic/id966142320', 'type': 'mt', 'subText': '', 'a-installUrl': 'market://details?id=jp.linecorp.linemusic.android', 'a-packageName': 'jp.linecorp.linemusic.android', 'countryCode': 'JP', 'a-linkUri': 'linemusic://open?target=track&item=mb00000000016197ea&subitem=mt000000000d69e2db&cc=JP&from=lc&v=1', 'i-linkUri': 'linemusic://open?target=track&item=mb00000000016197ea&subitem=mt000000000d69e2db&cc=JP&from=lc&v=1', 'text': dhenzaSelfbot.getContact(op.param2).displayName, 'id': 'mt000000000d69e2db', 'linkUri': 'https://music.me.me/launch?target=track&item=mb00000000016197ea&subitem=mt000000000d69e2db&cc=JP&from=lc&v=1','MSG_SENDER_ICON': "https://os.line.naver.jp/os/p/"+op.param2,'MSG_SENDER_NAME':  dhenzaSelfbot.getContact(op.param2).displayName,}
                         dhenzaSelfbot.sendMessage(op.param1, dhenzaSelfbot.getContact(op.param2).displayName, teambotmaxZ, 19)
 
 
@@ -2429,7 +2377,7 @@ def bot(op):
                                 for i in group.members[a*20 : (a+1)*20]:
                                     b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
                                     s += 7
-                                    txt += u'@Zero \n'
+                                    txt += u'@Zero\n'
                                 dhenzaSelfbot.sendMessage(msg.to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
 
                         elif cmd == "botlist":
@@ -2633,7 +2581,7 @@ def bot(op):
                               try:
                                   tz = pytz.timezone("Asia/Jakarta")
                                   timeNow = datetime.now(tz=tz)
-                                  dhenzaSelfbot.sendMessage(msg.to, "Cek sider diaktifkan\n\nDate "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nTime  "+ datetime.strftime(timeNow,'%H:%M:%S')+" ")
+                                  dhenzaSelfbot.sendMessage(msg.to, "sider is now on."+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nTime  "+ datetime.strftime(timeNow,'%H:%M:%S')+" ")
                                   del cctv['point'][msg.to]
                                   del cctv['sidermem'][msg.to]
                                   del cctv['cyduk'][msg.to]
@@ -2650,7 +2598,7 @@ def bot(op):
                                   tz = pytz.timezone("Asia/Jakarta")
                                   timeNow = datetime.now(tz=tz)
                                   cctv['cyduk'][msg.to]=False
-                                  dhenzaSelfbot.sendMessage(msg.to, "Cek sider dinonaktifkan\n\nDate "+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nTime  "+ datetime.strftime(timeNow,'%H:%M:%S')+" ")
+                                  dhenzaSelfbot.sendMessage(msg.to, "sider is now off"+ datetime.strftime(timeNow,'%Y-%m-%d')+"\nTime  "+ datetime.strftime(timeNow,'%H:%M:%S')+" ")
                               else:
                                   dhenzaSelfbot.sendMessage(msg.to, "Sudak tidak aktif")
                       
@@ -2904,7 +2852,7 @@ def bot(op):
                                                 lists.append(mention["M"])
                                         for ls in lists:
                                             dhenzaSelfbot.findAndAddContactsByMid(str(ls))
-                                        dhenzaSelfbot.sendMessage(to, "Success Add Friend "+dhenzaSelfbot.getContact(str(ls)).displayName)
+                                        dhenzaSelfbot.sendMessage(to, "added "+dhenzaSelfbot.getContact(str(ls)).displayName" to friends list")
                                         
                         elif cmd.startswith("delfriend "):
                           if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
@@ -2918,7 +2866,7 @@ def bot(op):
                                         lists.append(mention["M"])
                                 for ls in lists:
                                    dhenzaSelfbot.deleteContact(ls)
-                                dhenzaSelfbot.sendMessage(to, "Succes Delete Contact \n")
+                                dhenzaSelfbot.sendMessage(to, "unfriended lol")
                                 
                         elif cmd == "mykey":
                             dhenzaSelfbot.sendMessage(to, "KeyCommand Saat ini adalah [ {} ]".format(str(settings["keyCommand"])))
@@ -3034,14 +2982,14 @@ def bot(op):
                                   dhenzaSelfbot.updateProfile(dhenzaSelfbotProfile)
                                   dhenzaSelfbot.sendMessage(msg.to, sender, "「 Restore Profile 」\nNama ", " \nBerhasil restore profile")
                               except:
-                                  dhenzaSelfbot.sendMessage(msg.to, "Gagal restore profile")
+                                  dhenzaSelfbot.sendMessage(msg.to, "fixed.")
                                   
                         elif cmd == 'listblock':
                           if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                             blockedlist = dhenzaSelfbot.getBlockedContactIds()
                             kontak = dhenzaSelfbot.getContacts(blockedlist)
                             num=1
-                            msgs="List Blocked"
+                            msgs="Blocked:"
                             for ids in kontak:
                                 msgs+="\n[%i] %s" % (num, ids.displayName)
                                 num=(num+1)
@@ -3429,6 +3377,25 @@ def bot(op):
                                                        except:
                                                            dhenzaSelfbot.sendMessage(msg.to,"limit")
                                                            
+							
+		       if cmd== ".unsend" or cmd== rname + ".unsend":       
+                         client.sendMessage(msg.to,"「   Usage 」\n.unsend num")
+                      if cmd.startswith(".unsend ") or cmd.startswith(rname + "unsend "):
+                         msgid = cmd.split("unsend ")[1]                        
+                         if msgid.isdigit():
+                            mess = client.getRecentMessagesV2(msg.to,999)                     
+                            mes = []
+                            for x in mess:
+                                if x._from == mid:    
+                                   mes.append(x.id)                            
+                                   if len(mes) == int(msgid):break                       
+                            for b in mes:
+                                try:client.unsendMessage(b)
+                                except:pass
+                         else:client.sendMessage(msg.to,"「   Usage 」\n.unsend num")
+							
+							
+							
 #===========ADMIN ADD============#
                         elif ("Staff " in msg.text):
                           if wait["selfbot"] == True:
@@ -3592,61 +3559,61 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["Timeline"] = True
-                                dhenzaSelfbot.sendMessage(msg.to,"detect timeline on")
+                                dhenzaSelfbot.sendMessage(msg.to,"timeline is now on")
 
                         elif cmd == "timeline off" or text.lower() == 'timeline off':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["Timeline"] = False
-                                dhenzaSelfbot.sendMessage(msg.to,"detect timleline off ")
+                                dhenzaSelfbot.sendMessage(msg.to," timeline is now off")
                                 
                         elif cmd == "autoblock on" or text.lower() == 'blockadd on':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["autoblock"] = True
-                                dhenzaSelfbot.sendMessage(msg.to,"autoblock berhasil di hidupkan")
+                                dhenzaSelfbot.sendMessage(msg.to," block add is now on")
 
                         elif cmd == "autoblock off" or text.lower() == 'blockadd off':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["autoblock"] = False
-                                dhenzaSelfbot.sendMessage(msg.to,"autoblock berhasil di matikan")
+                                dhenzaSelfbot.sendMessage(msg.to,"blockadd is now off")
                                 
                         elif cmd == "unsend on" or text.lower() == 'unsend on':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 settings["unsendMessage"] = True
-                                dhenzaSelfbot.sendMessage(msg.to,"detect unsend diaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"sniping is now on")
 
                         elif cmd == "unsend off" or text.lower() == 'unsend off':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 settings["unsendMessage"] = False
-                                dhenzaSelfbot.sendMessage(msg.to,"detect unsend dinonaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to," sniping is now off")
                                 
                         elif cmd == "contact on" or text.lower() == 'contact on':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["contact"] = True
-                                dhenzaSelfbot.sendMessage(msg.to,"Deteksi contact diaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"contact is now on")
 
                         elif cmd == "contact off" or text.lower() == 'contact off':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["contact"] = False
-                                dhenzaSelfbot.sendMessage(msg.to,"Deteksi contact dinonaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"contact is now off")
 
                         elif cmd == "respon on" or text.lower() == 'respon on':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["detectMention"] = True
-                                dhenzaSelfbot.sendMessage(msg.to,"Auto respon diaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"auto respond is now on")
 
                         elif cmd == "respon off" or text.lower() == 'respon off':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["detectMention"] = False
-                                dhenzaSelfbot.sendMessage(msg.to,"Auto respon dinonaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"auto respon is now off")
 
                         elif cmd == "autojoin on" or text.lower() == 'autojoin on':
                           if wait["selfbot"] == True:
@@ -3664,37 +3631,37 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["autoAdd"] = True
-                                dhenzaSelfbot.sendMessage(msg.to,"Auto add diaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"autoadd is now on")
 
                         elif cmd == "autoadd off" or text.lower() == 'autoadd off':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["autoAdd"] = False
-                                dhenzaSelfbot.sendMessage(msg.to,"Auto add dinonaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"autoadd is now off")
 
                         elif cmd == "sticker on" or text.lower() == 'sticker on':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["sticker"] = True
-                                dhenzaSelfbot.sendMessage(msg.to,"Deteksi sticker diaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"sticker search is now on")
 
                         elif cmd == "sticker off" or text.lower() == 'sticker off':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 wait["sticker"] = False
-                                dhenzaSelfbot.sendMessage(msg.to,"Deteksi sticker dinonaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"sticker search is now off")
 
                         elif cmd == "jointicket on" or text.lower() == 'jointicket on':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 settings["autoJoinTicket"] = True
-                                dhenzaSelfbot.sendMessage(msg.to,"Join ticket diaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"join ticket is now on")
 
                         elif cmd == "jointicket off" or text.lower() == 'jointicket off':
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                                 settings["autoJoinTicket"] = False
-                                dhenzaSelfbot.sendMessage(msg.to,"Join ticket dinonaktifkan")
+                                dhenzaSelfbot.sendMessage(msg.to,"join ticket is now off")
 
 #===========COMMAND BLACKLIST============#
                         elif ("Talkban:on " in msg.text):
@@ -3806,7 +3773,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
                               if wait["blacklist"] == {}:
-                                dhenzaSelfbot.sendMessage(msg.to,"Nothing blacklist")
+                                dhenzaSelfbot.sendMessage(msg.to,"[None]")
                               else:
                                 ma = ""
                                 a = 0
@@ -3814,7 +3781,7 @@ def bot(op):
                                     a = a + 1
                                     end = '\n'
                                     ma += str(a) + ". " +dhenzaSelfbot.getContact(m_id).displayName + "\n"
-                                dhenzaSelfbot.sendMessage(msg.to,"Blacklist\n\n"+ma+"\n %s User" %(str(len(wait["blacklist"]))))
+                                dhenzaSelfbot.sendMessage(msg.to,"Blacklisted:\n\n"+ma+"\n [%s Users]" %(str(len(wait["blacklist"]))))
 
                         elif cmd == "talkbanlist" or text.lower() == 'talkbanlist':
                           if wait["selfbot"] == True:
