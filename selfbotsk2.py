@@ -391,13 +391,13 @@ def waktu(secs):
     mins, secs = divmod(secs,60)
     hours, mins = divmod(mins,60)
     days, hours = divmod(hours, 24)
-    return '%02d Hari %02d Jam %02d Menit %02d Detik' % (days, hours, mins, secs)
+    return '%02d days %02d hours %02d minutes %02d seconds' % (days, hours, mins, secs)
 
 def runtime(secs):
     mins, secs = divmod(secs,60)
     hours, mins = divmod(mins,60)
     days, hours = divmod(hours, 24)
-    return '%02d Hari %02d Jam %02d Menit %02d Detik' % (days, hours, mins, secs)
+    return '%02d days %02d hours %02d minutes %02d seconds' % (days, hours, mins, secs)
     
     
 def cloneProfile(mid):
@@ -550,7 +550,7 @@ def sendMention(to, mid, firstmessage):
         timeNow = datetime.now(tz=tz)
         eltime = time.time() - mulai
         bot = runtime(eltime)
-        text += mention+"jam : "+datetime.strftime(timeNow,'%H:%M:%S')+" wib\nNama Group : "+str(len(gid))+"\nTeman : "+str(len(teman))+"\nExpired : In "+hari+"\n Version :「Gaje Bots」  \nTanggal : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\nRuntime : \n • "+bot
+        text += mention+""
         dhenzaSelfbot.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
     except Exception as error:
         dhenzaSelfbot.sendMessage(to, "[ INFO ] Error :\n" + str(error))
@@ -2105,7 +2105,7 @@ def bot(op):
                           
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in owner or msg._from in admin or msg._from in staff or msg._from in mid:
-                                dhenzaSelfbot.sendMessage(msg.to,"Creator Kami")
+                                dhenzaSelfbot.sendMessage(msg.to,"xias")
                                 ma = ""
                                 for i in creator:
                                     ma = dhenzaSelfbot.getContact(i)
@@ -2202,7 +2202,7 @@ def bot(op):
                                 profile = dhenzaSelfbot.getProfile()
                                 profile.displayName = string
                                 dhenzaSelfbot.updateProfile(profile)
-                                dhenzaSelfbot.sendMessage(msg.to,"ɴᴀᴍᴀ ᴅɪ ɢᴀɴᴛɪ ᴍᴇɴᴊᴀᴅɪ " + string + "")  
+                                dhenzaSelfbot.sendMessage(msg.to,"changed name to" + string + "")  
 
                         elif text.lower() == "reset ɴame":
                           if wait["selfbot"] == True:
