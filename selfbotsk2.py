@@ -597,7 +597,6 @@ def command(text):
     return cmd
  
 def help():
-key = Setmain["keyCommand"]
 key = key.title()
      helpMessage = ""
      helpMessage += "" + ""
