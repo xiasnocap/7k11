@@ -597,15 +597,14 @@ def command(text):
     return cmd
  
 def help():
-num = 1
 key = Setmain["keyCommand"]
 key = key.title()
      helpMessage = ""
      helpMessage += "" + ""
      helpMessage += "" + ""
-     helpMessage += "" + "" + key + "'\n"
-     helpMessage += "" + "" + key + "'\n"
-     helpMessage += "" + "" + key + ""
+     helpMessage += "" + "" + key + "'kick\n"
+     helpMessage += "" + "" + key + "'help\n"
+     helpMessage += "" + "" + key + "me\n"
      helpMessage += "" + "" + key + ""
      helpMessage += "" + "" + key + ""
      helpMessage += "" + "" + key + ""
