@@ -601,8 +601,8 @@ def help():
     num = 1
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "╭──────────────\n"
-    helpMessage += "│ " + " ╭─• Command Help •─\n"
+    helpMessage = ""
+    helpMessage += "" + ""
     helpMessage += "│ " + " ├──────────────\n"
     helpMessage += "│ " + " │ 0%i)" % num + key + " Help2\n"
     num = (num+1)
