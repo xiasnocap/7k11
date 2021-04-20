@@ -2327,7 +2327,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "" + str(a) + ". " +G.displayName+ "\n"
-                               dhenzaSelfbot.sendMessage(msg.to,"+ma+"\nTotal"+str(len(gid))+"Friends")
+                               dhenzaSelfbot.sendMessage(msg.to,"●FRIEND LIST\n\n"+ma+"\nTotal"+str(len(gid))+"Friends")
                                
                         
                         elif cmd == "glist":
