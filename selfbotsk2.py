@@ -604,10 +604,8 @@ def help():
     helpMessage = ""
     helpMessage += "" + ""
     helpMessage += "" + ""
-    helpMessage += "" + "" + key + "help
-"
-    helpMessage += "" + "" + key + "test
-	"
+    helpMessage += "" + "" + key + "help\n"
+    helpMessage += "" + "" + key + "test\n"
     helpMessage += "" + "" + key + ""
     helpMessage += "" + "" + key + ""
     helpMessage += "" + "" + key + ""
