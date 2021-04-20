@@ -2341,7 +2341,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "" + str(a) + ". " +G.name+ "\n"
-                               dhenzaSelfbot.sendMessage(msg.to,"+ma+"\nTotal"+str(len(gid))+" Groups")
+                               dhenzaSelfbot.sendMessage(msg.to,"●GROUP LIST\n\n"+ma+"\nTotal"+str(len(gid))+" Groups")
 
                         elif cmd == "curl":
                           if wait["selfbot"] == True:
